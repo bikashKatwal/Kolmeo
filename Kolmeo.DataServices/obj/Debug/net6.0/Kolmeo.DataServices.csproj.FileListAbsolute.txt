@@ -1,0 +1,15 @@
+C:\Projects\Kolmeo\Kolmeo.DataServices\bin\Debug\net6.0\Kolmeo.DataServices.deps.json
+C:\Projects\Kolmeo\Kolmeo.DataServices\bin\Debug\net6.0\Kolmeo.DataServices.dll
+C:\Projects\Kolmeo\Kolmeo.DataServices\bin\Debug\net6.0\Kolmeo.DataServices.pdb
+C:\Projects\Kolmeo\Kolmeo.DataServices\bin\Debug\net6.0\Kolmeo.Entities.dll
+C:\Projects\Kolmeo\Kolmeo.DataServices\bin\Debug\net6.0\Kolmeo.Entities.pdb
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.csproj.AssemblyReference.cache
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.AssemblyInfoInputs.cache
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.AssemblyInfo.cs
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.csproj.CoreCompileInputs.cache
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.csproj.CopyComplete
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.dll
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\refint\Kolmeo.DataServices.dll
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\Kolmeo.DataServices.pdb
+C:\Projects\Kolmeo\Kolmeo.DataServices\obj\Debug\net6.0\ref\Kolmeo.DataServices.dll

@@ -1,0 +1,12 @@
+C:\Projects\Kolmeo\Kolmeo.Entities\bin\Debug\net6.0\Kolmeo.Entities.deps.json
+C:\Projects\Kolmeo\Kolmeo.Entities\bin\Debug\net6.0\Kolmeo.Entities.dll
+C:\Projects\Kolmeo\Kolmeo.Entities\bin\Debug\net6.0\Kolmeo.Entities.pdb
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\Kolmeo.Entities.csproj.AssemblyReference.cache
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\Kolmeo.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\Kolmeo.Entities.AssemblyInfoInputs.cache
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\Kolmeo.Entities.AssemblyInfo.cs
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\Kolmeo.Entities.csproj.CoreCompileInputs.cache
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\Kolmeo.Entities.dll
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\refint\Kolmeo.Entities.dll
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\Kolmeo.Entities.pdb
+C:\Projects\Kolmeo\Kolmeo.Entities\obj\Debug\net6.0\ref\Kolmeo.Entities.dll

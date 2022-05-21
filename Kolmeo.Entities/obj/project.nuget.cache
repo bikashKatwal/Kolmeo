@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6Zbirv7dBPgUvxi1xsIRiSmpy8strZL8YB5dA/0sBscR6vpQpQXDv3eh3QlXKJetwzOQ/H8VLnnwdhepNWX1gA==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Interview Test\\Kolmeo\\Kolmeo.Entities\\Kolmeo.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bikas\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
+    "C:\\Users\\bikas\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.0.1\\fluentvalidation.aspnetcore.11.0.1.nupkg.sha512",
+    "C:\\Users\\bikas\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.0.1\\fluentvalidation.dependencyinjectionextensions.11.0.1.nupkg.sha512",
+    "C:\\Users\\bikas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

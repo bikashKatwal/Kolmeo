@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qht/yCzWpqzJ2XHJtHSA6EUOiRqhIBYnekYLUlZSTG0=",
+  "Source": "Kolmeo.API",
+  "BasePath": "_content/Kolmeo.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
