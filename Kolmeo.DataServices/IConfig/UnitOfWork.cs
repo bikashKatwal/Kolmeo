@@ -1,6 +1,8 @@
-﻿using Kolmeo.DataServices.Data;
+﻿using FluentValidation;
+using Kolmeo.DataServices.Data;
 using Kolmeo.DataServices.IRepositories;
 using Kolmeo.DataServices.Repository;
+
 
 namespace Kolmeo.DataServices.IConfig
 {
@@ -8,7 +10,7 @@ namespace Kolmeo.DataServices.IConfig
     {
         private readonly AppDbContext _context;
 
-        public IProductRepository Products { get; private set; }
+        public IProductRepository Products { get; }
 
         public UnitOfWork(AppDbContext context)
         {

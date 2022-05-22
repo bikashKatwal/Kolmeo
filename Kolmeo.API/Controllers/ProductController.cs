@@ -1,8 +1,8 @@
 ﻿using Kolmeo.DataServices.IConfig;
+using Kolmeo.DataServices.Validators;
 using Kolmeo.Entities.DbSet;
 using Kolmeo.Entities.Dtos.Request;
 using Kolmeo.Entities.Dtos.Response;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kolmeo.API.Controllers
@@ -11,7 +11,8 @@ namespace Kolmeo.API.Controllers
     [ApiController]
     public class ProductController : BaseController
     {
-        public ProductController(IUnitOfWork unitOfWork) : base(unitOfWork)
+        public ProductController(IUnitOfWork unitOfWork, ICustomValidators validators) 
+            : base(unitOfWork, validators)
         {
 
         }
@@ -23,8 +24,8 @@ namespace Kolmeo.API.Controllers
             return Ok(products);
         }
 
-        [HttpGet("/GetProduct")]
-        public async Task<IActionResult> GetProduct(Guid Id)
+        [HttpGet("/GetProductById")]
+        public async Task<IActionResult> GetProductById(Guid Id)
         {
             var product = await _unitOfWork.Products.GetById(Id);
             if (product == null) NotFound();
@@ -42,21 +43,29 @@ namespace Kolmeo.API.Controllers
         [HttpPost("/AddProduct")]
         public async Task<IActionResult> AddProduct(ProductDto product)
         {
-            var result = await ValidateAsync(product, new ProductValidator());
+            try
+            {
+                var result = await _validators.ValidateAsync(product, new ProductValidator());
 
-            if (result != null)
-            {
-                return StatusCode(StatusCodes.Status400BadRequest, result);
+                if (result != null)
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest, result);
+                }
+
+                var _product = new Product
+                {
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = Decimal.Parse(product.Price.ToString("0.00")),
+                };
+                await _unitOfWork.Products.Add(_product);
+                await _unitOfWork.CompleteAsync();
+                return Ok(new ApiResult { ErrorNo = 0, Message = "Saved Sucessfully" });
             }
-            var _product = new Product
+            catch (Exception ex)
             {
-                Name = product.Name,
-                Description = product.Description,
-                Price = Decimal.Parse(product.Price.ToString("0.00")),
-            };
-            await _unitOfWork.Products.Add(_product);
-            await _unitOfWork.CompleteAsync();
-            return Ok(new ApiResult() { ErrorNo = 0, Message = "Saved Sucessfully" });
+                return StatusCode(StatusCodes.Status500InternalServerError, new ApiResult { ErrorNo = 500, Message = ex.Message });
+            }
         }
 
     }

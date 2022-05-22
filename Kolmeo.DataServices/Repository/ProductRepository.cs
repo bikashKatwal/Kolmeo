@@ -9,9 +9,9 @@ namespace Kolmeo.DataServices.Repository
     {
         public ProductRepository(AppDbContext context) : base(context) { }
 
-        public async Task<IEnumerable<Product>> GetProductByName(string Name)
+        public async Task<IEnumerable<Product>> GetProductByName(string ProductName)
         {
-            return await dbSet.Where(x => x.Name.ToLower() == Name.ToLower()).ToListAsync();
+            return await dbSet.Where(x => x.Name.ToLower() == ProductName.ToLower()).ToListAsync();
         }
     }
 }

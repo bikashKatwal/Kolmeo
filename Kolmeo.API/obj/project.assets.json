@@ -1453,7 +1453,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FluentValidation.AspNetCore >= 11.0.1",
       "Kolmeo.DataServices >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -1503,10 +1502,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "FluentValidation.AspNetCore": {
-            "target": "Package",
-            "version": "[11.0.1, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

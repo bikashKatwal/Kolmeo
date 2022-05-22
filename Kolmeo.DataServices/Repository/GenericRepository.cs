@@ -13,7 +13,6 @@ namespace Kolmeo.DataServices.Repository
         {
             _context = context;
             dbSet = context.Set<T>();
-
         }
         public virtual async Task<bool> Add(T entity)
         {
